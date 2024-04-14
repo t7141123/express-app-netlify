@@ -1,5 +1,5 @@
 {
-  "name": "netlify-express",
+  "name": "express-app-netlify",
   "version": "0.0.1",
   "description": "Example of how to deploy a Express.js Netlify app.",
   "main": "functions/server.js",
@@ -9,18 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neverendingqs/netlify-express.git"
+    "url": "git+https://github.com/t7141123/express-app-netlify.git"
   },
   "keywords": [
     "netlify",
     "express.js"
   ],
-  "author": "neverendingqs",
+  "author": "t7141123",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/neverendingqs/netlify-express/issues"
+    "url": "https://github.com/t7141123/express-app-netlify/issues"
   },
-  "homepage": "https://github.com/neverendingqs/netlify-express#readme",
+  "homepage": "https://github.com/t7141123/express-app-netlify#readme",
   "dependencies": {},
   "devDependencies": {
     "body-parser": "^1.19.0",
