@@ -1,27 +1,32 @@
 {
-  "name": "express-app-netlify",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "express": "^4.16.4",
-    "netlify-lambda": "^1.4.3",
-    "serverless-http": "^1.9.1"
-  },
-  "devDependencies": {},
+  "name": "netlify-express",
+  "version": "0.0.1",
+  "description": "Example of how to deploy a Express.js Netlify app.",
+  "main": "functions/server.js",
   "scripts": {
-    "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
-    "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build src"
+    "build": "netlify-lambda build express",
+    "start": "nodemon server-local.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/t7141123/express-app-netlify.git"
+    "url": "git+https://github.com/neverendingqs/netlify-express.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "netlify",
+    "express.js"
+  ],
+  "author": "neverendingqs",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/t7141123/express-app-netlify/issues"
+    "url": "https://github.com/neverendingqs/netlify-express/issues"
   },
-  "homepage": "https://github.com/t7141123/express-app-netlify#readme"
+  "homepage": "https://github.com/neverendingqs/netlify-express#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "netlify-lambda": "^1.6.3",
+    "nodemon": "^1.19.2",
+    "serverless-http": "^2.3.0"
+  }
 }
