@@ -1,9 +1,7 @@
 [build]
-  command = "CI= npm run build"
-  functions = "functions"
-  publish = "dist"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  # This will be run the site build
+  command = "npm run build"
+  # This is the directory is publishing to netlify's CDN
+  publish = "build"
+  # functions build directory
+  functions = "functions-build"
